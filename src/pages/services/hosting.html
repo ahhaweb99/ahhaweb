@@ -88,33 +88,33 @@
           
           <div class="callout">
 
-              <form>
+              <form name="contact-hosting" netlify-honeypot="bot-field" action="/thanks">
                   <div class="row">
                     <div class="medium-6 small-12 columns">
                       <label>Full Name
-                        <input type="text" placeholder="Type Here">
+                        <input name="Full Name" type="text" placeholder="Type Here">
                       </label>
                     </div>
                     <div class="medium-6 small-12 columns">
                         <label>Email
-                          <input type="email" placeholder="Type Here">
+                          <input name="Email" type="email" placeholder="Type Here">
                         </label>
                       </div>
                       <div class="medium-6 small-12 columns">
                         <label>Telephone
-                          <input type="tel" placeholder="Type Here">
+                          <input name="Telephone" type="tel" placeholder="Type Here">
                         </label>
                       </div>
                       <div class="medium-6 small-12 columns">
                         <label>Subject
-                          <select>
-                            <option>I need help with hosting</option>
+                          <select name="Subject">
+                            <option value="I need help with Hosting">I need help with hosting</option>
                           </select>
                         </label>
                       </div>
                       <div class="medium-12 small-12 columns">
                         <label>Message
-                          <textarea placeholder="Type Here"></textarea>
+                          <textarea name="Message" placeholder="Type Here"></textarea>
                         </label>
                       </div>
                       <div class="medium-12 small-12 columns">
