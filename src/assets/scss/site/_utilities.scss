@@ -1,0 +1,27 @@
+.margin-top-x1 {
+    margin-top: $global-margin;
+}
+
+.margin-top-x2 {
+    margin-top: $global-margin*2;
+}
+
+.margin-bottom-x1 {
+    margin-bottom: $global-margin;
+}
+
+.padding-bottom-x0 {
+    padding-bottom: 0;
+}
+
+.margin-bottom-x2 {
+    margin-bottom: $global-margin*2;
+}
+
+.padding-all-x1 {
+    @include padding(1,1,1,1);
+}
+
+.padding-all-x2 {
+    @include padding(2,2,2,2);
+}
