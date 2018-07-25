@@ -18,7 +18,7 @@
   </head>
   <body>
 
-      <div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
+      <div id="offcanvas-full-screen" class="off-canvas position-right" data-content-scroll="false" tdata-off-canvas data-off-canvas data-transition="overlap" id="offCanvas" data-off-canvas>
           <div class="offcanvas-full-screen-inner">
             <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
               <span aria-hidden="true">&times;</span>
@@ -33,8 +33,10 @@
             </ul>
           </div>
         </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
         
-        <header class="off-canvas-content sticky-container" data-sticky-container data-off-canvas-content>
+        <header class="sticky-container" data-sticky-container data-off-canvas-content>
           <div class="top-bar">
             <a href="/" class="top-bar-title" id="gradient-logo">
             </a>
@@ -75,16 +77,29 @@
     <div class="marketing-site-features text-center bg-color__pale-blue padding-bottom-x0">
       <h2 class="marketing-site-features-headline">Latest...</h2>
       <div class="collapse margin-top-x2 work-container">
-          <div class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/carpet-barn-logo.jpg'); background-size:cover;">
+          <a href="https://www.huthwaiteinternational.com/horizons" class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/huthwaite-horizons.jpg'); background-size:cover;">
             <div class="tag js-gradient">
-              The Carpet Barn website design and build, www.thecarpetbarnonline.co.uk
+              Wordpress and Frontend build on www.huthwaiteinternational.com/horizons 
             </div>
-          </div>
-          <div class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/asap.jpg'); background-size:cover;">
+          </a>
+          <a href="https://www.chrysalisfp.com" class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/chrysalisfp.jpg'); background-size:cover;">
             <div class="tag js-gradient">
-              Wordpress and Frontend build on asap-digital.com, for Broad Creative
+              Wordpress, Design and Frontend build on www.chrysalisfp.com
             </div>
+          </a>
+      </div>
+      <div class="collapse work-container">
+        
+        <a href="http://asap-digital.com" class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/asap.jpg'); background-size:cover;">
+          <div class="tag js-gradient">
+            Wordpress and Frontend build on<br/>asap-digital.com, for Broad Creative
           </div>
+        </a>
+        <a href="https://thecarpetbarnonline.co.uk" class="medium-6 large-6 cell work-module" style="background-image:url('/assets/img/carpet-barn-logo.jpg'); background-size:cover;">
+          <div class="tag js-gradient">
+            Website design and build on www.thecarpetbarnonline.co.uk
+          </div>
+        </a>
       </div>
     </div>
     
@@ -95,7 +110,7 @@
         <div class="row">
           <div class="small-12 medium-12 columns text-center container">  
               <div class="callout">
-                  <p>At <i>ahha web solutions</i>, the sole focus is to assist your company with it's online presence. Whether it be a new website, an existing website or you are a company that is looking for a web developer who can help on a freelance or contract basis, we will be able to help.</p>
+                  <p>At <i>ahha web solutions</i>, the sole focus is to assist your company with its online presence. Whether it be a new website, an existing website or you are a company that is looking for a web developer who can help on a freelance or contract basis, we will be able to help.</p>
                   <a href="/services" class="button" role="button">More about the services <i class="fi-play" aria-hidden="true"></i></a>
                   <div class="callout-border js-gradient"></div>          
               </div>
@@ -109,7 +124,7 @@
     <footer>
       <div class="row grid-x medium-text-right text-center">
         <div class="cell small-12 medium-4 large-4">
-            <div class="site-copyright text-center medium-text-left">&copy; ahha web solutions 2017</div>
+            <div class="site-copyright text-center medium-text-left">&copy; ahha web solutions 2018</div>
         </div>
         <div class="cell small-12 medium-8 large-8">
           <ul class="menu grid-x">
@@ -121,7 +136,7 @@
       </div>
     </footer>
       
-      
+    </div>
 
     <script src="assets/js/app.js"></script>
   </body>

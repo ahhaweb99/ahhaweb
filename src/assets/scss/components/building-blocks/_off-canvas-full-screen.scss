@@ -1,10 +1,17 @@
 $offcanvas-full-screen-bg: $button-background;
-$offcanvas-full-screen-side: left;
+$offcanvas-full-screen-side: right;
 $offcanvas-full-screen-closebutton-size: 5rem;
+$offcanvas-background: $button-background;
+
 
 .offcanvas-full-screen {
   @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
   @include off-canvas-position($position: $offcanvas-full-screen-side, $sizes: 100%);
+
+}
+
+.off-canvas {
+  background: $button-background;
 }
 
 .offcanvas-full-screen-inner {
