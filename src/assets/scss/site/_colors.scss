@@ -13,3 +13,30 @@
 .color-white {
     color:$white;
 }
+
+#gradient, .cssmask #gradient-logo, .js-gradient, .cssmask .js-icon-grad {
+will-change: background;
+background: linear-gradient(314deg, #3e23ff, #3cff3c, #ff2362, #2dafe6, #ff00ff, #ff8000);
+background-size: 1200% 1200%;
+
+-webkit-animation: GradientBGAnim 120s ease infinite;
+-moz-animation: GradientBGAnim 120s ease infinite;
+animation: GradientBGAnim 120s ease infinite;
+
+@-webkit-keyframes GradientBGAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes GradientBGAnim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes GradientBGAnim { 
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+}
