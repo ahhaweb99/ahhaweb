@@ -180,7 +180,7 @@ https://flickity.metafizzy.co
 
 .hero-carousel {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 216px);
   opacity: 0;
   transition: opacity ease 250ms;
   .flickity-viewport {

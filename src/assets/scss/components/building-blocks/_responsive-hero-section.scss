@@ -26,6 +26,10 @@ $hero-height: calc(100vh - 166px) ;
     position: absolute;
     height: 50%;
     width: 50%;
+    @media (max-width: 650px) {
+      height: 80%;
+      width: 80%;
+    }
     path {
       fill: white;
     }
