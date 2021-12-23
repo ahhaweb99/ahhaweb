@@ -25,7 +25,7 @@ const globeIn = () => {
   });
   setTimeout(() => {
     stripesOn();
-  }, 10000);
+  }, 5000);
 };
 
 const stripesOn = () => {
