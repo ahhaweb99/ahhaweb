@@ -16,6 +16,7 @@ const xmascardwrap = Array.from(document.getElementsByClassName('xmas-card-holde
 const xmasperspective = Array.from(document.getElementsByClassName('xmas-perspective'));
 const xmascardfront = Array.from(document.getElementsByClassName('xmas-card-front'));
 const xmascardback = Array.from(document.getElementsByClassName('xmas-card-white-back'));
+const button = document.getElementById('button');
 
 const globeIn = () => {
   globe.forEach((element, index) => {
@@ -97,15 +98,66 @@ const animateCard = () => {
   setTimeout(() => {
     body[0].classList.add('step-03');
   }, 5000);
+  setTimeout(() => {
+    animateCardOut();
+  }, 15000);
+};
+
+const animateCardOut = () => {
+  body[0].classList.remove('step-03');
+  setTimeout(() => {
+    xmascardback[0].classList.remove('is-hidden');
+  }, 1000);
+  setTimeout(() => {
+    body[0].classList.remove('step-02');
+  }, 2000);
+  setTimeout(() => {
+    body[0].classList.remove('step-01');
+    spinCard();
+  }, 5000);
 };
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const nametext = urlParams.get('name');
 const nameholder = document.getElementById('clientname');
+const nameholderMobile = document.getElementById('clientnamemobile');
+nameholderMobile.innerHTML = nametext;
 nameholder.innerHTML = nametext;
-console.log(queryString, nametext, nameholder);
-globeIn();
+
+const spinCard = () => {
+  let mouseOverContainer = document.getElementById('rotateWindow');
+  let ex1Layer = xmascardwrap[0];
+
+  function transforms(x, y, el) {
+    const constraint = 90;
+    let box = el.getBoundingClientRect();
+    let calcY = x - box.x - box.width / 2 / constraint;
+    return "rotateX(10deg) " + "   rotateY(" + calcY + "deg) scale(0.5)";
+  }
+
+  ;
+
+  function transformElement(el, xyEl) {
+    el.style.transform = transforms.apply(null, xyEl);
+  }
+
+  mouseOverContainer.onmousemove = function (e) {
+    let xy = [e.clientX, e.clientY];
+    let position = xy.concat([ex1Layer]);
+    window.requestAnimationFrame(function () {
+      transformElement(ex1Layer, position);
+    });
+  };
+};
+
+if (window.innerWidth > 720) {
+  globeIn();
+}
+
+button.addEventListener('click', function () {
+  animateCard();
+});
 
 /***/ }),
 

@@ -1,6 +1,8 @@
 {
   "main.css": "/assets/main.css",
   "main.js": "/assets/main.js",
+  "main.jpg": "/assets/images/night-sky.jpg",
+  "main.js.map": "/assets/main.js.map",
   "main.css.map": "/assets/main.css.map",
-  "main.js.map": "/assets/main.js.map"
+  "src/assets/images/night-sky.jpg": "/assets/images/night-sky.jpg"
 }
