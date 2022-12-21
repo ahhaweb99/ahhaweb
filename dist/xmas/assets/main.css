@@ -27,7 +27,7 @@ body {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-image: url(/assets/images/night-sky.jpg);
+  background-image: url(./images/night-sky.jpg);
   background-size: 2400px 1350px;
   background-position: top left;
   animation: starsmove 60s infinite;
@@ -42,8 +42,6 @@ main {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  overflow: hidden;
-  max-width: 100vw;
 }
 main img {
   max-width: none;
