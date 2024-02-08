@@ -1,2 +1,0 @@
-
-Sitemap: https://github.com/clenemt/eleventy-webpack/sitemap.xml
